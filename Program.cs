@@ -1,9 +1,6 @@
-﻿
-
-static int Game()
+﻿static int Game()
 {
     Console.WriteLine("\nPierre (1) Papier (2) ou Ciseaux (3) ?");
-
 
     Action input;
 
@@ -17,11 +14,6 @@ static int Game()
 
     Random random = new Random();
     Action randomPick = (Action)random.Next(3);
-
-    // if (input != 1 && input != 2 && input != 3)
-    // {
-    //     return 2;
-    // }
 
     if (randomPick == Action.Pierre)
     {
@@ -77,7 +69,6 @@ static int Game()
     }
 
     return 0; // default output
-
 }
 
 
@@ -86,7 +77,6 @@ int playerScore = 0;
 
 while (true)
 {
-
     Console.WriteLine($"CPU = {cpuScore} VOUS = {playerScore}");
 
     int result = Game();
@@ -100,17 +90,14 @@ while (true)
     {
         Console.WriteLine("GAGNE !");
         playerScore += 1;
-
     }
     else if (result == 0)
     {
         Console.WriteLine("EGALITE !");
-
     }
     else
     {
         Console.WriteLine("erreur");
-
     }
 
 }
