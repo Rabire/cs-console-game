@@ -1,0 +1,15 @@
+/Users/rabire/projects/tp-console-game/bin/Debug/net7.0/tp-console-game
+/Users/rabire/projects/tp-console-game/bin/Debug/net7.0/tp-console-game.deps.json
+/Users/rabire/projects/tp-console-game/bin/Debug/net7.0/tp-console-game.runtimeconfig.json
+/Users/rabire/projects/tp-console-game/bin/Debug/net7.0/tp-console-game.dll
+/Users/rabire/projects/tp-console-game/bin/Debug/net7.0/tp-console-game.pdb
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/tp-console-game.csproj.AssemblyReference.cache
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/tp-console-game.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/tp-console-game.AssemblyInfoInputs.cache
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/tp-console-game.AssemblyInfo.cs
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/tp-console-game.csproj.CoreCompileInputs.cache
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/tp-console-game.dll
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/refint/tp-console-game.dll
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/tp-console-game.pdb
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/tp-console-game.genruntimeconfig.cache
+/Users/rabire/projects/tp-console-game/obj/Debug/net7.0/ref/tp-console-game.dll
