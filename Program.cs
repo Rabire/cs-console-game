@@ -1,31 +1,41 @@
-﻿static int Game()
+﻿
+
+static int Game()
 {
-    Console.WriteLine("\n\nChoisissez :");
-    Console.WriteLine("Pierre (1) Papier (2) Ciseaux (3)\n");
+    Console.WriteLine("\nPierre (1) Papier (2) ou Ciseaux (3) ?");
 
-    int input = Convert.ToInt32(Console.ReadLine());
 
-    Random rand = new Random();
-    int randomPick = rand.Next(4);
+    Action input;
 
-    if (input != 1 && input != 2 && input != 3)
+    switch (Convert.ToInt32(Console.ReadLine()))
     {
-        return 2;
+        case 1: input = Action.Pierre; break;
+        case 2: input = Action.Papier; break;
+        case 3: input = Action.Ciseaux; break;
+        default: return 400;
     }
 
-    if (randomPick == 1)
+    Random random = new Random();
+    Action randomPick = (Action)random.Next(3);
+
+    // if (input != 1 && input != 2 && input != 3)
+    // {
+    //     return 2;
+    // }
+
+    if (randomPick == Action.Pierre)
     {
 
-        if (input == 2)
+        if (input == Action.Papier)
         {
             return 1;
 
         }
-        else if (input == 1)
+        else if (input == Action.Pierre)
         {
             return 0;
         }
-        else if (input == 3)
+        else if (input == Action.Ciseaux)
         {
             return -1;
 
@@ -33,34 +43,34 @@
 
     }
 
-    if (randomPick == 2)
+    if (randomPick == Action.Papier)
     {
-        if (input == 3)
+        if (input == Action.Ciseaux)
         {
             return 1;
         }
-        else if (input == 2)
+        else if (input == Action.Papier)
         {
             return 0;
         }
-        else if (input == 1)
+        else if (input == Action.Pierre)
         {
             return -1;
         }
 
     }
 
-    if (randomPick == 3)
+    if (randomPick == Action.Ciseaux)
     {
-        if (input == 1)
+        if (input == Action.Pierre)
         {
             return 1;
         }
-        else if (input == 3)
+        else if (input == Action.Ciseaux)
         {
             return 0;
         }
-        else if (input == 2)
+        else if (input == Action.Papier)
         {
             return -1;
         }
@@ -72,12 +82,12 @@
 
 
 int cpuScore = 0;
-int userScore = 0;
+int playerScore = 0;
 
 while (true)
 {
 
-    Console.WriteLine($"CPU = {cpuScore} VOUS = {userScore}");
+    Console.WriteLine($"CPU = {cpuScore} VOUS = {playerScore}");
 
     int result = Game();
 
@@ -89,7 +99,7 @@ while (true)
     else if (result == 1)
     {
         Console.WriteLine("GAGNE !");
-        userScore += 1;
+        playerScore += 1;
 
     }
     else if (result == 0)
@@ -103,4 +113,11 @@ while (true)
 
     }
 
+}
+
+enum Action
+{
+    Pierre = 1,
+    Papier = 2,
+    Ciseaux = 3,
 }
